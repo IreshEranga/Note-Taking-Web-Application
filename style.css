@@ -1,0 +1,212 @@
+/*----Reset----*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/*----Common----*/
+body{
+    background-image: url(https://images.pexels.com/photos/317356/pexels-photo-317356.jpeg);
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    padding: 5px 8px;
+    font-size: 0.8rem;
+    transition: all 0.3s ease-in;
+}
+
+button:hover{
+    background-color: white !important;
+    color: black !important;
+}
+
+input, textarea, table{
+    font-size: 1rem;
+}
+
+::placeholder{
+    font-size: 0.9rem;
+}
+
+/*----Header----*/
+header{
+    background-color: #0984e3;
+    max-width: 650px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+header .logo{
+    background-color: white;
+    color: #0984e3;
+    padding: 5px;
+}
+
+head .search input{
+    width: 250px;
+    height: 30px;
+    padding: 16px 10px;
+}
+
+/*----Container----*/
+.container{
+    background-color: transparent;
+    max-width: 650px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 5px #0984e3 solid ;
+}
+/*----Input form----*/
+.container .inp-frm{
+    background-color: white;
+    width: 40%;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.container .inp-frm form{
+    margin: auto;
+    background-color: #0984e3;
+    padding: 15px;
+}
+
+.container .inp-frm form h3{
+    margin-bottom: 5px;
+    color: white;
+}
+
+.container .inp-frm input{
+    width: 100%;
+    padding: 15px 10px;
+    height: 20px;
+    margin-bottom: 10px;
+}
+
+.container .inp-frm textarea{
+    width: 100%;
+    padding: 7px 10px;
+    resize: none;   /*to avoid sizing by user itself*/
+}
+
+.container .inp-frm button{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.container .inp-frm #save{
+    background-color: #06612f;
+    color: white;
+}
+
+.container .inp-frm #reset{
+    background-color: #810404;
+    color: white;
+}
+
+/*----Table----*/
+.container .table{
+    background-color: white;
+    width: 50%;
+    max-height:260px;
+    padding: 10px;
+    margin-left: 10px;
+    overflow: auto;
+}
+
+
+.container .table .note-body{
+    display: none;
+}
+
+
+.container .table table{
+    width: 100%;
+    background-color: #0984e3;
+    border-collapse: collapse;
+}
+
+.container .table table, 
+.container .table td{
+    border: 2px white solid;
+    padding: 5px;
+}
+
+.container .table table th{
+    padding: 5px;
+    text-align: left;
+    background-color: #636e72;
+}
+
+.container .table table th:last-child,
+.container .table table th:nth-last-child(2),
+.container .table table .btcellv,
+.container .table table .btcelld{
+    text-align: center;
+}
+
+
+.container .table table td{
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis; /*when it goin long title name it gives ......*/
+}
+
+.container .table table .btcellv button{
+    background-color: #06612f;
+    color: white;
+}
+
+.container .table table .btcelld button{
+    background-color: #810404;
+    color: white;
+}
+
+.ftr{
+    font-weight: bold;
+    background-color: transparent;
+    color: black;
+    width: 100%;
+    text-align: center;
+    margin-top: 356px;
+}
+
+/*----Responsive----*/
+@media(max-width:600px){
+    /*Heade*/
+    header{
+        flex-direction: column;
+    }
+
+    header .logo{
+        margin-bottom: 10px;
+    }
+
+    /*Container*/
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container .inp-frm,
+    .container .table{
+        margin-bottom: 10px;
+        min-width: 250px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
