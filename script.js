@@ -90,7 +90,7 @@ function addNote(e){
         td2.className = 'btcellv';
         var btn1 = document.createElement('button');
         btn1.appendChild(document.createTextNode('View'));
-        btn1.setAttribute('id', 'vw');
+        btn1.setAttribute('id', 'btnv');
         td2.appendChild(btn1);
 
         //New td for delete
@@ -98,7 +98,7 @@ function addNote(e){
         td3.className = 'btcelld';
         var btn2 = document.createElement('button');
         btn2.appendChild(document.createTextNode('Delete'));
-        btn2.setAttribute('id', 'del');
+        btn2.setAttribute('id', 'btnd');
         td3.appendChild(btn2);
 
 
